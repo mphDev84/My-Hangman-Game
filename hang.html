@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<meta charset="UTF-8">
+<title>My Hangman Game</title>
+<link rel="stylesheet" type="text/css" href="hang.css">
+<body id="body">
+    
+    <div id="header">
+    <h1 id="header">Welcome to my Hangman Game!</h1>
+    
+    </div>
+    <div id="icon">
+    <i class="fa fa-gamepad"></i>
+    <button id="button2" onClick="buildTile()">Click here to play!</button></div>
+    <button id="button3" onClick="refresh()">Refresh</button>
+    <section id="game">
+        <ul id="tileMaker" class="wordspace">
+            <!--<div class ="letter_tile" id = "tile1"><p id="letter1"></p></div>
+            <div class ="letter_tile" id = "tile2"><p id="letter2"></p></div>
+            <div class ="letter_tile" id = "tile3"><p id="letter3"></p></div>
+            <div class ="letter_tile" id = "tile4"><p id="letter4"></p></div>
+            <div class ="letter_tile" id = "tile5"><p id="letter5"></p></div>
+            <div class ="letter_tile" id = "tile6"><p id="letter6"></p></div>
+            -->
+        </ul>
+    </section>
+    <section id="user_section">
+        <div id="user">
+            <form id="inform">
+               <p id="para1">Guess a letter!</p>
+                <input type="text" id="textin">
+            </form>
+            
+        <button id="button" onClick="changeLetter(inform)">Submit</button>      
+        </div>
+        <div id="fail">
+        <p id="p0">FAILED ATTEMPTS:</p>
+        <p id="attempt"></p>
+    </div>
+    
+        <div class="letterArea">
+            <p id="p1">Letters you've guessed....</p>
+<p id="letterArea"></p>
+<script src=hang.js></script><br>
+        </div>
+        </section>
+    </section>
+    <p id="head">Sweet as</p>
+</body>
